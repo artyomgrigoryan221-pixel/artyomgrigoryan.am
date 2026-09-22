@@ -213,11 +213,36 @@
       .chat-input button{
         width:100%;
       }
-    }
+    }.lang-switch{
+  display:flex;
+  justify-content:flex-end;
+  gap:8px;
+  padding:14px 0;
+}
+
+.lang-switch button{
+  width:auto;
+  margin:0;
+  padding:8px 12px;
+  border:1px solid #333;
+  background:#111;
+  color:#fff;
+  border-radius:10px;
+  font-size:13px;
+  cursor:pointer;
+}
+
+.lang-switch button:hover{
+  background:#222;
+}
   </style>
 </head>
 
-<body>
+<body><div class="lang-switch">
+  <button onclick="setLang('hy')">HY</button>
+  <button onclick="setLang('en')">EN</button>
+  <button onclick="setLang('ru')">RU</button>
+</div>
 
   <div class="wrap">
 
@@ -335,6 +360,92 @@
     </footer>
 
   </div>
+<script>
+  const translations = {
+    en: {
+        "Բիզնես · Գործընկերություն · Ներդրումներ": "Business · Partnership · Investments",
+            "Բաց եմ հետաքրքիր բիզնես գաղափարների, նոր նախագծերի, ռազմավարական համագործակցության և ներդրումային առաջարկների համար։":
+                  "Open to interesting business ideas, new projects, strategic partnerships and investment opportunities.",
+                      "Բիզնես առաջարկներ": "Business Proposals",
+                          "Նոր նախագծեր, ծառայություններ և զարգացման հնարավորություններ։":
+                                "New projects, services and growth opportunities.",
+                                    "Ներդրումներ": "Investments",
+                                        "Հեռանկարային գաղափարներ և ներդրումային համագործակցություն։":
+                                              "Promising ideas and investment partnerships.",
+                                                  "Գործընկերություն": "Partnership",
+                                                      "Երկարաժամկետ և փոխշահավետ համագործակցության առաջարկներ։":
+                                                            "Long-term and mutually beneficial partnership opportunities.",
+                                                                "Ուղարկել առաջարկ": "Submit Proposal",
+                                                                    "Ներկայացրեք Ձեր գաղափարը կամ ներդրումային առաջարկը։":
+                                                                          "Present your idea or investment proposal.",
+                                                                              "Անուն / Ընկերություն": "Name / Company",
+                                                                                  "Կապի տվյալ": "Contact Information",
+                                                                                      "Առաջարկի տեսակ": "Proposal Type",
+                                                                                          "Ներդրման չափը": "Investment Amount",
+                                                                                              "Առաջարկի նկարագրություն": "Proposal Description",
+                                                                                                  "Բիզնես առաջարկ": "Business Proposal",
+                                                                                                      "Ներդրումային առաջարկ": "Investment Proposal",
+                                                                                                          "Այլ": "Other",
+                                                                                                              "Ուղարկել": "Send",
+                                                                                                                  "Գրեք Ձեր հարցը...": "Write your question..."
+                                                                                                                    },
+
+                                                                                                                      ru: {
+                                                                                                                          "Բիզնես · Գործընկերություն · Ներդրումներ": "Бизнес · Партнёрство · Инвестиции",
+                                                                                                                              "Բաց եմ հետաքրքիր բիզնես գաղափարների, նոր նախագծերի, ռազմավարական համագործակցության և ներդրումային առաջարկների համար։":
+                                                                                                                                    "Открыт для интересных бизнес-идей, новых проектов, стратегического сотрудничества и инвестиционных предложений.",
+                                                                                                                                        "Բիզնես առաջարկներ": "Бизнес-предложения",
+                                                                                                                                            "Նոր նախագծեր, ծառայություններ և զարգացման հնարավորություններ։":
+                                                                                                                                                  "Новые проекты, услуги и возможности развития.",
+                                                                                                                                                      "Ներդրումներ": "Инвестиции",
+                                                                                                                                                          "Հեռանկարային գաղափարներ և ներդրումային համագործակցություն։":
+                                                                                                                                                                "Перспективные идеи и инвестиционное сотрудничество.",
+                                                                                                                                                                    "Գործընկերություն": "Партнёрство",
+                                                                                                                                                                        "Երկարաժամկետ և փոխշահավետ համագործակցության առաջարկներ։":
+                                                                                                                                                                              "Предложения долгосрочного и взаимовыгодного сотрудничества.",
+                                                                                                                                                                                  "Ուղարկել առաջարկ": "Отправить предложение",
+                                                                                                                                                                                      "Ներկայացրեք Ձեր գաղափարը կամ ներդրումային առաջարկը։":
+                                                                                                                                                                                            "Представьте свою идею или инвестиционное предложение.",
+                                                                                                                                                                                                "Անուն / Ընկերություն": "Имя / Компания",
+                                                                                                                                                                                                    "Կապի տվյալ": "Контактные данные",
+                                                                                                                                                                                                        "Առաջարկի տեսակ": "Тип предложения",
+                                                                                                                                                                                                            "Ներդրման չափը": "Размер инвестиций",
+                                                                                                                                                                                                                "Առաջարկի նկարագրություն": "Описание предложения",
+                                                                                                                                                                                                                    "Բիզնես առաջարկ": "Бизнес-предложение",
+                                                                                                                                                                                                                        "Ներդրումային առաջարկ": "Инвестиционное предложение",
+                                                                                                                                                                                                                            "Այլ": "Другое",
+                                                                                                                                                                                                                                "Ուղարկել": "Отправить",
+                                                                                                                                                                                                                                    "Գրեք Ձեր հարցը...": "Напишите ваш вопрос..."
+                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                      };
+
+                                                                                                                                                                                                                                      document.querySelectorAll("h2,h3,p,label,option,button,.bubble,.note").forEach(el => {
+                                                                                                                                                                                                                                        el.dataset.hy = el.textContent.trim();
+                                                                                                                                                                                                                                        });
+
+                                                                                                                                                                                                                                        document.querySelectorAll("input,textarea").forEach(el => {
+                                                                                                                                                                                                                                          el.dataset.hyPlaceholder = el.placeholder;
+                                                                                                                                                                                                                                          });
+
+                                                                                                                                                                                                                                          function setLang(lang){
+                                                                                                                                                                                                                                            document.documentElement.lang = lang;
+
+                                                                                                                                                                                                                                              document.querySelectorAll("h2,h3,p,label,option,button,.bubble,.note").forEach(el => {
+                                                                                                                                                                                                                                                  if(lang === "hy"){
+                                                                                                                                                                                                                                                        el.textContent = el.dataset.hy;
+                                                                                                                                                                                                                                                            } else if(translations[lang] && translations[lang][el.dataset.hy]){
+                                                                                                                                                                                                                                                                  el.textContent = translations[lang][el.dataset.hy];
+                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                                        });
+
+                                                                                                                                                                                                                                                                          document.querySelectorAll("input,textarea").forEach(el => {
+                                                                                                                                                                                                                                                                              const original = el.dataset.hyPlaceholder;
+                                                                                                                                                                                                                                                                                  el.placeholder = lang === "hy"
+                                                                                                                                                                                                                                                                                        ? original
+                                                                                                                                                                                                                                                                                              : (translations[lang]?.[original] || original);
+                                                                                                                                                                                                                                                                                                });
+                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                </script>
 
 </body>
 </html>
