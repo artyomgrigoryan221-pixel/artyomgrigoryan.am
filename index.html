@@ -220,7 +220,7 @@
   padding:14px 0;
 }
 
-.lang-switch button{
+.lanwitch button{
   width:auto;
   margin:0;
   padding:8px 12px;
@@ -420,7 +420,7 @@
                                                                                                                                                                                                                                       };
 
                                                                                                                                                                                                                                       document.querySelectorAll("h2,h3,p,label,option,button,.bubble,.note").forEach(el => {
-                                                                                                                                                                                                                                        el.dataset.hy = el.textContent.trim();
+        el.dataset.hy = el.textContent.replace(/\s+/g, ' ').trim();                                                                                                                                                                                                                                el.ataset.hy = el.textContent.trim();
                                                                                                                                                                                                                                         });
 
                                                                                                                                                                                                                                         document.querySelectorAll("input,textarea").forEach(el => {
