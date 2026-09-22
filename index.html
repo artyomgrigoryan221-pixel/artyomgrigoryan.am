@@ -361,90 +361,115 @@
 
   </div>
 <script>
-  const translations = {
-    en: {
-        "Բիզնես · Գործընկերություն · Ներդրումներ": "Business · Partnership · Investments",
-            "Բաց եմ հետաքրքիր բիզնես գաղափարների, նոր նախագծերի, ռազմավարական համագործակցության և ներդրումային առաջարկների համար։":
-                  "Open to interesting business ideas, new projects, strategic partnerships and investment opportunities.",
-                      "Բիզնես առաջարկներ": "Business Proposals",
-                          "Նոր նախագծեր, ծառայություններ և զարգացման հնարավորություններ։":
-                                "New projects, services and growth opportunities.",
-                                    "Ներդրումներ": "Investments",
-                                        "Հեռանկարային գաղափարներ և ներդրումային համագործակցություն։":
-                                              "Promising ideas and investment partnerships.",
-                                                  "Գործընկերություն": "Partnership",
-                                                      "Երկարաժամկետ և փոխշահավետ համագործակցության առաջարկներ։":
-                                                            "Long-term and mutually beneficial partnership opportunities.",
-                                                                "Ուղարկել առաջարկ": "Submit Proposal",
-                                                                    "Ներկայացրեք Ձեր գաղափարը կամ ներդրումային առաջարկը։":
-                                                                          "Present your idea or investment proposal.",
-                                                                              "Անուն / Ընկերություն": "Name / Company",
-                                                                                  "Կապի տվյալ": "Contact Information",
-                                                                                      "Առաջարկի տեսակ": "Proposal Type",
-                                                                                          "Ներդրման չափը": "Investment Amount",
-                                                                                              "Առաջարկի նկարագրություն": "Proposal Description",
-                                                                                                  "Բիզնես առաջարկ": "Business Proposal",
-                                                                                                      "Ներդրումային առաջարկ": "Investment Proposal",
-                                                                                                          "Այլ": "Other",
-                                                                                                              "Ուղարկել": "Send",
-                                                                                                                  "Գրեք Ձեր հարցը...": "Write your question..."
-                                                                                                                    },
+const translations = {
+  en: {
+    "ENTREPRENEUR · ARMENIA": "ENTREPRENEUR · ARMENIA",
+    "Բիզնես · Գործընկերություն · Ներդրումներ": "Business · Partnership · Investments",
+    "Բաց եմ հետաքրքիր բիզնես գաղափարների, նոր նախագծերի, ռազմավարական համագործակցության և ներդրումային առաջարկների համար։": "Open to interesting business ideas, new projects, strategic partnerships and investment opportunities.",
+    "Բիզնես առաջարկներ": "Business Proposals",
+    "Նոր նախագծեր, ծառայություններ և զարգացման հնարավորություններ։": "New projects, services and growth opportunities.",
+    "Ներդրումներ": "Investments",
+    "Հեռանկարային գաղափարներ և ներդրումային համագործակցություն։": "Promising ideas and investment partnerships.",
+    "Գործընկերություն": "Partnership",
+    "Երկարաժամկետ և փոխշահավետ համագործակցության առաջարկներ։": "Long-term and mutually beneficial partnership opportunities.",
+    "Ուղարկել առաջարկ": "Submit Proposal",
+    "Ներկայացրեք Ձեր գաղափարը կամ ներդրումային առաջարկը։": "Present your idea or investment proposal.",
+    "Անուն / Ընկերություն": "Name / Company",
+    "Կապի տվյալ": "Contact Information",
+    "Առաջարկի տեսակ": "Proposal Type",
+    "Ներդրման չափը": "Investment Amount",
+    "Առաջարկի նկարագրություն": "Proposal Description",
+    "Բիզնես առաջարկ": "Business Proposal",
+    "Ներդրումային առաջարկ": "Investment Proposal",
+    "Այլ": "Other",
+    "Ձեր անունը կամ ընկերության անվանումը": "Your name or company name",
+    "Email, հեռախոս կամ Telegram": "Email, phone or Telegram",
+    "Օրինակ՝ $50,000": "Example: $50,000",
+    "Մանրամասն ներկայացրեք Ձեր առաջարկը...": "Describe your proposal in detail...",
+    "Առաջարկների իրական ուղարկման համակարգը միացնելու ենք հաջորդ քայլով։": "The proposal submission system will be connected in the next step.",
+    "AI Assistant": "AI Assistant",
+    "Այցելուները կարող են AI օգնականից հարցնել համագործակցության, ներդրումների և կայքի վերաբերյալ։": "Visitors can ask the AI assistant about partnerships, investments and the website.",
+    "AG · AI Assistant": "AG · AI Assistant",
+    "Բարև 👋 Ես Արտյոմ Գրիգորյանի AI օգնականն եմ։ Կարող եք հարցնել բիզնես համագործակցության կամ ներդրումային առաջարկների վերաբերյալ։": "Hello 👋 I am Artyom Grigoryan's AI assistant. You can ask about business partnerships or investment proposals.",
+    "Գրեք Ձեր հարցը...": "Write your question...",
+    "Ուղարկել": "Send",
+    "Իրական AI պատասխանները կմիացնենք առանձին՝ առանց գաղտնի API բանալին կայքի կոդում հրապարակելու։": "Live AI responses will be connected separately without exposing a private API key in the website code.",
+    "© 2026 Artyom Grigoryan · Armenia": "© 2026 Artyom Grigoryan · Armenia"
+  },
 
-                                                                                                                      ru: {
-                                                                                                                          "Բիզնես · Գործընկերություն · Ներդրումներ": "Бизнес · Партнёрство · Инвестиции",
-                                                                                                                              "Բաց եմ հետաքրքիր բիզնես գաղափարների, նոր նախագծերի, ռազմավարական համագործակցության և ներդրումային առաջարկների համար։":
-                                                                                                                                    "Открыт для интересных бизнес-идей, новых проектов, стратегического сотрудничества и инвестиционных предложений.",
-                                                                                                                                        "Բիզնես առաջարկներ": "Бизнес-предложения",
-                                                                                                                                            "Նոր նախագծեր, ծառայություններ և զարգացման հնարավորություններ։":
-                                                                                                                                                  "Новые проекты, услуги и возможности развития.",
-                                                                                                                                                      "Ներդրումներ": "Инвестиции",
-                                                                                                                                                          "Հեռանկարային գաղափարներ և ներդրումային համագործակցություն։":
-                                                                                                                                                                "Перспективные идеи и инвестиционное сотрудничество.",
-                                                                                                                                                                    "Գործընկերություն": "Партнёрство",
-                                                                                                                                                                        "Երկարաժամկետ և փոխշահավետ համագործակցության առաջարկներ։":
-                                                                                                                                                                              "Предложения долгосрочного и взаимовыгодного сотрудничества.",
-                                                                                                                                                                                  "Ուղարկել առաջարկ": "Отправить предложение",
-                                                                                                                                                                                      "Ներկայացրեք Ձեր գաղափարը կամ ներդրումային առաջարկը։":
-                                                                                                                                                                                            "Представьте свою идею или инвестиционное предложение.",
-                                                                                                                                                                                                "Անուն / Ընկերություն": "Имя / Компания",
-                                                                                                                                                                                                    "Կապի տվյալ": "Контактные данные",
-                                                                                                                                                                                                        "Առաջարկի տեսակ": "Тип предложения",
-                                                                                                                                                                                                            "Ներդրման չափը": "Размер инвестиций",
-                                                                                                                                                                                                                "Առաջարկի նկարագրություն": "Описание предложения",
-                                                                                                                                                                                                                    "Բիզնես առաջարկ": "Бизнес-предложение",
-                                                                                                                                                                                                                        "Ներդրումային առաջարկ": "Инвестиционное предложение",
-                                                                                                                                                                                                                            "Այլ": "Другое",
-                                                                                                                                                                                                                                "Ուղարկել": "Отправить",
-                                                                                                                                                                                                                                    "Գրեք Ձեր հարցը...": "Напишите ваш вопрос..."
-                                                                                                                                                                                                                                      }
-                                                                                                                                                                                                                                      };
+  ru: {
+    "ENTREPRENEUR · ARMENIA": "ПРЕДПРИНИМАТЕЛЬ · АРМЕНИЯ",
+    "Բիզնես · Գործընկերություն · Ներդրումներ": "Бизнес · Партнёрство · Инвестиции",
+    "Բաց եմ հետաքրքիր բիզնես գաղափարների, նոր նախագծերի, ռազմավարական համագործակցության և ներդրումային առաջարկների համար։": "Открыт для интересных бизнес-идей, новых проектов, стратегического сотрудничества и инвестиционных предложений.",
+    "Բիզնես առաջարկներ": "Бизнес-предложения",
+    "Նոր նախագծեր, ծառայություններ և զարգացման հնարավորություններ։": "Новые проекты, услуги и возможности развития.",
+    "Ներդրումներ": "Инвестиции",
+    "Հեռանկարային գաղափարներ և ներդրումային համագործակցություն։": "Перспективные идеи и инвестиционное сотрудничество.",
+    "Գործընկերություն": "Партнёрство",
+    "Երկարաժամկետ և փոխշահավետ համագործակցության առաջարկներ։": "Предложения долгосрочного и взаимовыгодного сотрудничества.",
+    "Ուղարկել առաջարկ": "Отправить предложение",
+    "Ներկայացրեք Ձեր գաղափարը կամ ներդրումային առաջարկը։": "Представьте свою идею или инвестиционное предложение.",
+    "Անուն / Ընկերություն": "Имя / Компания",
+    "Կապի տվյալ": "Контактные данные",
+    "Առաջարկի տեսակ": "Тип предложения",
+    "Ներդրման չափը": "Размер инвестиций",
+    "Առաջարկի նկարագրություն": "Описание предложения",
+    "Բիզնես առաջարկ": "Бизнес-предложение",
+    "Ներդրումային առաջարկ": "Инвестиционное предложение",
+    "Այլ": "Другое",
+    "Ձեր անունը կամ ընկերության անվանումը": "Ваше имя или название компании",
+    "Email, հեռախոս կամ Telegram": "Email, телефон или Telegram",
+    "Օրինակ՝ $50,000": "Например: $50 000",
+    "Մանրամասն ներկայացրեք Ձեր առաջարկը...": "Подробно опишите ваше предложение...",
+    "Առաջարկների իրական ուղարկման համակարգը միացնելու ենք հաջորդ քայլով։": "Систему отправки предложений подключим на следующем этапе.",
+    "AI Assistant": "ИИ-ассистент",
+    "Այցելուները կարող են AI օգնականից հարցնել համագործակցության, ներդրումների և կայքի վերաբերյալ։": "Посетители могут спросить ИИ-ассистента о сотрудничестве, инвестициях и сайте.",
+    "AG · AI Assistant": "AG · ИИ-ассистент",
+    "Բարև 👋 Ես Արտյոմ Գրիգորյանի AI օգնականն եմ։ Կարող եք հարցնել բիզնես համագործակցության կամ ներդրումային առաջարկների վերաբերյալ։": "Здравствуйте 👋 Я ИИ-ассистент Артёма Григоряна. Вы можете спросить о деловом сотрудничестве или инвестиционных предложениях.",
+    "Գրեք Ձեր հարցը...": "Напишите ваш вопрос...",
+    "Ուղարկել": "Отправить",
+    "Իրական AI պատասխանները կմիացնենք առանձին՝ առանց գաղտնի API բանալին կայքի կոդում հրապարակելու։": "Реальные ответы ИИ подключим отдельно, без публикации секретного API-ключа в коде сайта.",
+    "© 2026 Artyom Grigoryan · Armenia": "© 2026 Artyom Grigoryan · Армения"
+  }
+};
 
-                                                                                                                                                                                                                                      document.querySelectorAll("h2,h3,p,label,option,button,.bubble,.note").forEach(el => {                                                                                                                                                                                                                                el.dataset.hy = el.textContent.trim();
-                                                                                                                                                                                                                                        }); 
+const normalize = text => text.replace(/\s+/g, " ").trim();
 
-                                                                                                                                                                                                                                        document.querySelectorAll("input,textarea").forEach(el => {
-                                                                                                                                                                                                                                          el.dataset.hyPlaceholder = el.placeholder;
-                                                                                                                                                                                                                                          });
+document
+  .querySelectorAll("h2,h3,p,label,option,button,.bubble,.note,.subtitle,.ai-head,footer")
+  .forEach(el => {
+    el.dataset.hy = normalize(el.textContent);
+  });
 
-                                                                                                                                                                                                                                          function setLang(lang){
-                                                                                                                                                                                                                                            document.documentElement.lang = lang;
+document.querySelectorAll("input,textarea").forEach(el => {
+  el.dataset.hyPlaceholder = el.placeholder || "";
+});
 
-                                                                                                                                                                                                                                              document.querySelectorAll("h2,h3,p,label,option,button,.bubble,.note").forEach(el => {
-                                                                                                                                                                                                                                                  if(lang === "hy"){
-                                                                                                                                                                                                                                                        el.textContent = el.dataset.hy;
-                                                                                                                                                                                                                                                            } else if(translations[lang] && translations[lang][el.dataset.hy]){
-                                                                                                                                                                                                                                                                  el.textContent = translations[lang][el.dataset.hy];
-                                                                                                                                                                                                                                                                      }
-                                                                                                                                                                                                                                                                        });
+function setLang(lang) {
+  document.documentElement.lang = lang;
 
-                                                                                                                                                                                                                                                                          document.querySelectorAll("input,textarea").forEach(el => {
-                                                                                                                                                                                                                                                                              const original = el.dataset.hyPlaceholder;
-                                                                                                                                                                                                                                                                                  el.placeholder = lang === "hy"
-                                                                                                                                                                                                                                                                                        ? original
-                                                                                                                                                                                                                                                                                              : (translations[lang]?.[original] || original);
-                                                                                                                                                                                                                                                                                                });
-                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                </script>
+  document
+    .querySelectorAll("h2,h3,p,label,option,button,.bubble,.note,.subtitle,.ai-head,footer")
+    .forEach(el => {
+      const original = el.dataset.hy;
+
+      if (lang === "hy") {
+        el.textContent = original;
+      } else {
+        el.textContent = translations[lang]?.[original] || original;
+      }
+    });
+
+  document.querySelectorAll("input,textarea").forEach(el => {
+    const original = el.dataset.hyPlaceholder;
+
+    el.placeholder =
+      lang === "hy"
+        ? original
+        : (translations[lang]?.[original] || original);
+  });
+}
+</script>
 
 </body>
 </html>
