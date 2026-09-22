@@ -2,65 +2,339 @@
 <html lang="hy">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Արտյոմ Գրիգորյան | Artyom Grigoryan — Entrepreneur</title>
-  <meta name="description" content="Արտյոմ Գրիգորյանի (Artyom Grigoryan) պաշտոնական անձնական կայքը։ Հայ ձեռնարկատեր՝ արտադրության, առևտրի և բիզնեսի զարգացման ոլորտներում։">
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://artyomgrigoryan.am/">
-  <meta property="og:title" content="Artyom Grigoryan — Entrepreneur • Armenia">
-  <meta property="og:description" content="Official personal website of Artyom Grigoryan.">
-  <meta property="og:type" content="profile">
-  <meta property="og:url" content="https://artyomgrigoryan.am/">
-  <meta property="og:image" content="https://artyomgrigoryan.am/ag-brand.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artyom Grigoryan | Entrepreneur · Armenia</title>
+  <meta name="description" content="Artyom Grigoryan — entrepreneur from Armenia. Business partnerships, investment opportunities and new ideas.">
+
   <style>
-    :root{--bg:#070707;--card:#101010;--text:#f1f1f1;--muted:#aaa;--line:#2a2a2a}
-    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top,#171717 0,#070707 42%);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
-    main{width:min(920px,92%);margin:auto}.hero{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 0}
-    .hero img{width:min(620px,100%);height:auto;border-radius:18px;box-shadow:0 20px 70px #000}
-    h1{font-size:clamp(2.2rem,7vw,4.6rem);letter-spacing:.08em;margin:28px 0 2px}.tag{color:#cfcfcf;letter-spacing:.28em;text-transform:uppercase;font-size:.85rem}
-    section{padding:58px 0;border-top:1px solid var(--line)}h2{font-size:1.6rem;letter-spacing:.05em}.lead{font-size:1.15rem;color:#d4d4d4;max-width:760px}
-    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.chip{border:1px solid #3a3a3a;border-radius:999px;padding:9px 15px;color:#d7d7d7;background:#0d0d0d}
-    footer{text-align:center;color:#777;padding:45px 0 60px;font-size:.9rem}
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    body{
+      background:#070707;
+      color:#f4f4f4;
+      font-family:Arial,Helvetica,sans-serif;
+      line-height:1.6;
+    }
+
+    .wrap{
+      width:min(100% - 32px,1000px);
+      margin:auto;
+    }
+
+    header{
+      padding:35px 0 25px;
+      text-align:center;
+    }
+
+    .logo{
+      width:min(100%,620px);
+      border-radius:24px;
+      box-shadow:0 0 45px rgba(255,255,255,.08);
+    }
+
+    h1{
+      font-size:clamp(38px,8vw,72px);
+      letter-spacing:8px;
+      margin-top:35px;
+    }
+
+    .subtitle{
+      letter-spacing:7px;
+      color:#cfcfcf;
+      margin-top:10px;
+    }
+
+    .line{
+      height:1px;
+      background:#333;
+      margin:45px 0;
+    }
+
+    section{
+      padding:35px 0;
+    }
+
+    h2{
+      font-size:30px;
+      margin-bottom:16px;
+    }
+
+    .lead{
+      color:#bdbdbd;
+      max-width:760px;
+      font-size:18px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:18px;
+      margin-top:30px;
+    }
+
+    .card{
+      background:#111;
+      border:1px solid #292929;
+      border-radius:20px;
+      padding:24px;
+    }
+
+    .card h3{
+      margin-bottom:10px;
+      font-size:20px;
+    }
+
+    .card p{
+      color:#aaa;
+    }
+
+    .proposal{
+      background:linear-gradient(180deg,#111,#0b0b0b);
+      border:1px solid #303030;
+      border-radius:24px;
+      padding:25px;
+      margin-top:25px;
+    }
+
+    label{
+      display:block;
+      margin:16px 0 7px;
+      color:#ccc;
+    }
+
+    input,textarea,select{
+      width:100%;
+      background:#080808;
+      color:white;
+      border:1px solid #3a3a3a;
+      border-radius:12px;
+      padding:14px;
+      font-size:16px;
+      outline:none;
+    }
+
+    textarea{
+      min-height:140px;
+      resize:vertical;
+    }
+
+    button{
+      width:100%;
+      margin-top:22px;
+      padding:16px;
+      border:0;
+      border-radius:14px;
+      background:#f0f0f0;
+      color:#080808;
+      font-size:17px;
+      font-weight:700;
+      cursor:pointer;
+    }
+
+    button:hover{
+      opacity:.9;
+    }
+
+    .ai-box{
+      margin-top:25px;
+      border:1px solid #303030;
+      border-radius:24px;
+      overflow:hidden;
+      background:#0d0d0d;
+    }
+
+    .ai-head{
+      padding:18px 20px;
+      border-bottom:1px solid #2a2a2a;
+      font-weight:bold;
+    }
+
+    .chat{
+      min-height:180px;
+      padding:20px;
+      color:#bbb;
+    }
+
+    .bubble{
+      background:#171717;
+      border-radius:16px;
+      padding:14px 16px;
+      max-width:85%;
+    }
+
+    .chat-input{
+      display:flex;
+      gap:10px;
+      padding:15px;
+      border-top:1px solid #2a2a2a;
+    }
+
+    .chat-input input{
+      flex:1;
+    }
+
+    .chat-input button{
+      width:auto;
+      margin:0;
+      padding:12px 18px;
+    }
+
+    .note{
+      margin-top:12px;
+      color:#777;
+      font-size:13px;
+    }
+
+    footer{
+      border-top:1px solid #252525;
+      margin-top:50px;
+      padding:35px 0;
+      color:#777;
+      text-align:center;
+    }
+
+    @media(max-width:600px){
+      h1{
+        letter-spacing:4px;
+      }
+
+      .subtitle{
+        letter-spacing:3px;
+      }
+
+      .chat-input{
+        flex-direction:column;
+      }
+
+      .chat-input button{
+        width:100%;
+      }
+    }
   </style>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Artyom Grigoryan",
-    "alternateName":["Արտյոմ Գրիգորյան","Артём Григорян"],
-    "url":"https://artyomgrigoryan.am/",
-    "nationality":{"@type":"Country","name":"Armenia"},
-    "jobTitle":"Entrepreneur"
-  }
-  </script>
 </head>
+
 <body>
-<main>
-  <header class="hero">
-    <img src="ag-brand.png" alt="AG — Artyom Grigoryan">
-    <h1>ARTYOM GRIGORYAN</h1>
-    <div class="tag">Entrepreneur • Armenia</div>
-  </header>
 
-  <section>
-    <h2>Արտյոմ Գրիգորյան</h2>
-    <p class="lead">Արտյոմ Գրիգորյանը հայաստանցի ձեռնարկատեր է, որը զբաղվում է սեփական բիզնեսի ստեղծմամբ և զարգացմամբ՝ արտադրության և առևտրի ոլորտներում։</p>
-    <p>Գործունեության մեջ նա կարևորում է գործնական մոտեցումը, ինքնուրույն զարգացումը, աշխատանքի որակը և նոր հնարավորությունների որոնումը։ Նա հետաքրքրված է բիզնեսի զարգացման նոր ուղղություններով, ժամանակակից տեխնոլոգիաներով և Հայաստանում նոր նախագծերի իրականացման հնարավորություններով։</p>
-    <div class="chips">
-      <span class="chip">Ձեռնարկատիրություն</span>
-      <span class="chip">Արտադրություն</span>
-      <span class="chip">Առևտուր</span>
-      <span class="chip">Բիզնեսի զարգացում</span>
-    </div>
-  </section>
+  <div class="wrap">
 
-  <section>
-    <h2>About</h2>
-    <p class="lead">Artyom Grigoryan is an Armenian entrepreneur focused on building and developing businesses in production and commerce.</p>
-    <p>His approach emphasizes practical thinking, continuous development, quality of work, and the pursuit of new opportunities.</p>
-  </section>
+    <header>
+      <img src="ag-brand.png" alt="Artyom Grigoryan" class="logo">
 
-  <footer>© 2026 Artyom Grigoryan • Armenia</footer>
-</main>
+      <h1>ARTYOM<br>GRIGORYAN</h1>
+      <div class="subtitle">ENTREPRENEUR · ARMENIA</div>
+    </header>
+
+    <div class="line"></div>
+
+    <section>
+      <h2>Բիզնես · Գործընկերություն · Ներդրումներ</h2>
+
+      <p class="lead">
+        Բաց եմ հետաքրքիր բիզնես գաղափարների, նոր նախագծերի,
+        ռազմավարական համագործակցության և ներդրումային առաջարկների համար։
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Բիզնես առաջարկներ</h3>
+          <p>Նոր նախագծեր, ծառայություններ և զարգացման հնարավորություններ։</p>
+        </div>
+
+        <div class="card">
+          <h3>Ներդրումներ</h3>
+          <p>Հեռանկարային գաղափարներ և ներդրումային համագործակցություն։</p>
+        </div>
+
+        <div class="card">
+          <h3>Գործընկերություն</h3>
+          <p>Երկարաժամկետ և փոխշահավետ համագործակցության առաջարկներ։</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ուղարկել առաջարկ</h2>
+
+      <p class="lead">
+        Ներկայացրեք Ձեր գաղափարը կամ ներդրումային առաջարկը։
+      </p>
+
+      <div class="proposal">
+
+        <label>Անուն / Ընկերություն</label>
+        <input type="text" placeholder="Ձեր անունը կամ ընկերության անվանումը">
+
+        <label>Կապի տվյալ</label>
+        <input type="text" placeholder="Email, հեռախոս կամ Telegram">
+
+        <label>Առաջարկի տեսակ</label>
+        <select>
+          <option>Բիզնես առաջարկ</option>
+          <option>Ներդրումային առաջարկ</option>
+          <option>Գործընկերություն</option>
+          <option>Այլ</option>
+        </select>
+
+        <label>Ներդրման չափը</label>
+        <input type="text" placeholder="Օրինակ՝ $50,000">
+
+        <label>Առաջարկի նկարագրություն</label>
+        <textarea placeholder="Մանրամասն ներկայացրեք Ձեր առաջարկը..."></textarea>
+
+        <button type="button">
+          Ուղարկել առաջարկ
+        </button>
+
+        <div class="note">
+          Առաջարկների իրական ուղարկման համակարգը միացնելու ենք հաջորդ քայլով։
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>AI Assistant</h2>
+
+      <p class="lead">
+        Այցելուները կարող են AI օգնականից հարցնել համագործակցության,
+        ներդրումների և կայքի վերաբերյալ։
+      </p>
+
+      <div class="ai-box">
+
+        <div class="ai-head">
+          AG · AI Assistant
+        </div>
+
+        <div class="chat">
+          <div class="bubble">
+            Բարև 👋 Ես Արտյոմ Գրիգորյանի AI օգնականն եմ։
+            Կարող եք հարցնել բիզնես համագործակցության կամ
+            ներդրումային առաջարկների վերաբերյալ։
+          </div>
+        </div>
+
+        <div class="chat-input">
+          <input type="text" placeholder="Գրեք Ձեր հարցը...">
+          <button type="button">Ուղարկել</button>
+        </div>
+
+      </div>
+
+      <div class="note">
+        Իրական AI պատասխանները կմիացնենք առանձին՝ առանց գաղտնի API բանալին կայքի կոդում հրապարակելու։
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Artyom Grigoryan · Armenia
+    </footer>
+
+  </div>
+
 </body>
 </html>
