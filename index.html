@@ -312,38 +312,39 @@
       </form>        
     </section>
 
-    <section>
-      <h2>AI Assistant</h2>
+    <section id="ai-assistant">
+  <h2>AI Assistant</h2>
 
-      <p class="lead">
-        Այցելուները կարող են AI օգնականից հարցնել համագործակցության,
-        ներդրումների և կայքի վերաբերյալ։
-      </p>
+  <p class="lead">
+    Հարցրեք բիզնես համագործակցության, ներդրումների, գործող հացի արտադրամասի,
+    աշխատանքի հնարավորությունների կամ կապի տվյալների վերաբերյալ։
+  </p>
 
-      <div class="ai-box">
+  <div class="ai-box">
 
-        <div class="ai-head">
-        AG · AI Assistant
-        </div>
+    <div class="ai-head">
+      AG · AI Assistant
+    </div>
 
-        <div class="chat">
-          <div class="bubble">
-            Բարև 👋 Ես Արտյոմ Գրիգորյանի AI օգնականն եմ։
-            Կարող եք հարցնել բիզնես համագործակցության կամ
-            ներդրումային առաջարկների վերաբերյալ։
-          </div>
-        </div>
-
-        <div class="chat-input">
-          <input type="text" placeholder="Գրեք Ձեր հարցը...">
-          <button type="button">Ուղարկել</button>
-        </div>
-
+    <div class="chat" id="aiChat">
+      <div class="bubble">
+        Բարև 👋 Ես Արտյոմ Գրիգորյանի AI օգնականն եմ։
+        Կարող եք հարցնել բիզնես համագործակցության, ներդրումային առաջարկների,
+        գործող հացի արտադրամասի, աշխատանքի հնարավորությունների կամ կապի վերաբերյալ։
       </div>
+    </div>
 
-      <div class="note">
-        Իրական AI պատասխանները կմիացնենք առանձին՝ առանց գաղտնի API բանալին կայքի կոդում հրապարակելու։
-      </div>
+    <div class="chat-input">
+      <input
+        id="aiInput"
+        type="text"
+        placeholder="Գրեք Ձեր հարցը..."
+        autocomplete="off"
+      >
+      <button id="aiSend" type="button">Ուղարկել</button>
+    </div>
+
+  </div>
     </section>
 
     <footer>
