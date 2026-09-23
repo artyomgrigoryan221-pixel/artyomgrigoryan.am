@@ -461,6 +461,61 @@ function setLang(lang) {
         : (translations[lang]?.[original] || original);
   });
 }
+  const aiInput = document.getElementById("aiInput");
+const aiSend = document.getElementById("aiSend");
+const aiChat = document.getElementById("aiChat");
+
+const AI_URL = "https://ag-ai-assistant.artyomgrigoryan221.workers.dev";
+
+async function sendAIMessage() {
+  const message = aiInput.value.trim();
+  if (!message) return;
+
+  const userMessage = document.createElement("div");
+  userMessage.className = "bubble";
+  userMessage.textContent = message;
+  aiChat.appendChild(userMessage);
+
+  aiInput.value = "";
+  aiSend.disabled = true;
+
+  const answerMessage = document.createElement("div");
+  answerMessage.className = "bubble";
+  answerMessage.textContent = "Պատասխանում եմ…";
+  aiChat.appendChild(answerMessage);
+
+  try {
+    const response = await fetch(AI_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ message })
+    });
+
+    const data = await response.json();
+
+    answerMessage.textContent =
+      data.answer ||
+      data.error ||
+      "Պատասխան ստանալ չհաջողվեց։";
+
+  } catch (error) {
+    answerMessage.textContent =
+      "Կապի սխալ է։ Փորձեք կրկին։";
+  }
+
+  aiSend.disabled = false;
+}
+
+aiSend.addEventListener("click", sendAIMessage);
+
+aiInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    sendAIMessage();
+  }
+});
 </script>
 
 </body>
